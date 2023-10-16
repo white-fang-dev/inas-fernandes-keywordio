@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I wanted to express my sincere gratitude for the opportunity to undertake the machine test you provided. I'm pleased to inform you that I have successfully completed the assignment, which involved converting the mockup into responsive web pages using React JS, implementing routing and various functionalities as specified.
 
-## Available Scripts
+Live demo hosted on firebase - [Link]
+(https://ads-canvas.web.app).
 
-In the project directory, you can run:
+## Project Details
 
-### `npm start`
+**Stack** - Html5, Css3, Scss, Javascript, ReactJs
+**Font** - Poppins
+**npm packages** - sass, react-redux, react-chartjs-2, chart.js, react-router-dom
+**Hosting** - Firebase
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Functionalities and tasks
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**1. Create top navigation - Dashboard & Create Ad** ✅
+I have successfully implemented the top navigation, which is responsive on all devices. For mobile view, I added a hamburger menu that, when clicked, opens the navigation links in full screen.
 
-### `npm test`
+**2. Add sorting option to tables (High to Low & Low to High)** ✅
+Sorting functionality has been added for all categories. Hovering or clicking on a category in the table header triggers a dropdown menu, allowing users to choose to sort from high to low or low to high.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**3. Create a toggle for Ads Insights showing a doughnut chart & table** ✅
+I have developed a toggle button that displays either the chart or the table with the relevant data.
 
-### `npm run build`
+**4. Create a dropdown for matrixes in Ads Insights. Selecting a matric will show data in the doughnut chart for that matric.** ✅
+I've introduced a dropdown with different options, such as clicks, conversions, revenue, and cost. Selecting any of these options updates the Doughnut chart to display the corresponding data.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**5. Based on the checkboxes (Text Ad and/or Media Ad), redirect to the Fill Data page and show respective inputs.** ✅
+On the Create Ad page, when a user selects an option and clicks "Next," the relevant form is displayed. To achieve this, I used params to extract the URL and determine which form to display.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**6. After submitting the form, redirect to Ads Submitted, wait for 0.6 seconds, and redirect to Create Ads Page** ✅
+Upon submitting the form, a modal opens to confirm the successful submission. After a brief delay of 0.6 seconds, users are redirected to the Create Ads page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Responsive** ✅
+The application is fully responsive and functions seamlessly across various device widths.
 
-### `npm run eject`
+## Thank You
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please review the provided information, and feel free to reach out if you have any further questions or need additional details.

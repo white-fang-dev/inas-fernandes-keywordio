@@ -1,0 +1,123 @@
+@import "./../color/color.scss";
+
+@mixin table-row-styling {
+  padding: 0.6rem 0.8rem;
+  font-size: 0.875rem;
+  text-align: right;
+}
+
+.dataTable {
+  flex: 1 1 0;
+  background-color: $white-color;
+  .tableMainHeader {
+    border: 1px solid $border-color;
+    border-radius: 8px 8px 0 0;
+    border-bottom: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0.8rem;
+    align-items: center;
+    .mainTableHeader {
+      color: $header-color;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .infoIcon {
+      width: 1.5rem;
+    }
+  }
+  .table {
+    border: 1px solid $border-color;
+    border-collapse: collapse;
+    width: 100%;
+    thead {
+      tr {
+        th {
+          @include table-row-styling;
+          color: $header-color;
+          border-bottom: 1px solid $border-color;
+          cursor: pointer;
+          font-weight: 500;
+          position: relative;
+          &:first-child {
+            text-align: left;
+          }
+          .filter {
+            width: 0.4rem;
+            vertical-align: middle;
+            margin-left: 0.2rem;
+          }
+          .sortingDiv {
+            display: none;
+            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12);
+            padding: 0.2rem 0.5rem 0.5rem;
+            border-radius: 4px;
+            text-align: left;
+            position: absolute;
+            width: 6rem;
+            right: 0;
+            background-color: $white-color;
+            .filterHeader {
+              font-weight: 600;
+              margin-bottom: 0.2rem;
+              font-size: 0.875rem;
+              color: $header-color;
+            }
+            .sortType {
+              padding: 0.2rem;
+              font-size: 0.75rem;
+              font-weight: 500;
+              border-radius: 4px;
+              &:hover {
+                background-color: $border-color;
+                cursor: pointer;
+              }
+            }
+          }
+          &:hover .sortingDiv {
+            display: block;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          @include table-row-styling;
+          color: $text-color;
+          border-bottom: 1px solid $border-color;
+          font-weight: 400;
+          &:first-child {
+            text-align: left;
+          }
+        }
+      }
+    }
+    tfoot {
+      tr {
+        background-color: $background-color;
+
+        td {
+          @include table-row-styling;
+          color: $text-color;
+          font-weight: 400;
+          &:first-child {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .dataTable {
+    width: 100%;
+    overflow: auto;
+    .tableMainHeader,
+    .table {
+      width: 200%;
+    }
+  }
+}

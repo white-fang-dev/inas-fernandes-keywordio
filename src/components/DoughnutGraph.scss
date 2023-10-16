@@ -1,0 +1,66 @@
+@import "./../color/color.scss";
+.donutDiv {
+  // height: 100%;
+  flex: 1 1 0;
+  background-color: $white-color;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  position: relative;
+  .donutHeader {
+    border-bottom: 1px solid $border-color;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0.8rem;
+    align-items: center;
+    .mainDonutHeader {
+      color: $header-color;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .dropdownDiv {
+      display: flex;
+      gap: 1rem;
+      .dropdown {
+        color: $text-color;
+        border-radius: 4px;
+        border: 1px solid $border-color;
+        &:focus {
+          outline: none;
+        }
+      }
+      .infoIcon {
+        object-fit: contain;
+        width: 1.5rem;
+      }
+    }
+  }
+  .toggleDiv {
+    background-color: #efefef;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    gap: 0.2rem;
+    cursor: pointer;
+    border-radius: 20px;
+    .toggleIconDiv {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      padding: 0.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .toggleIcon {
+        object-fit: contain;
+        display: block;
+        width: 80%;
+        height: 80%;
+      }
+    }
+    .toggleIconActive {
+      background-color: $button-color;
+    }
+  }
+}

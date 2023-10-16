@@ -1,0 +1,33 @@
+@import "./../color/color.scss";
+.createAds {
+  @include default-section-style;
+  .createAdsSection {
+    @include default-sub-section-style;
+    .createAdsHeader {
+      @include header-style;
+    }
+    .adsSection {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      gap: 2.5rem;
+    }
+    .createAdsBtnDiv {
+      position: absolute;
+      right: 1rem;
+      bottom: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .createAds {
+    .createAdsSection {
+      .adsSection {
+        gap: 1.25rem;
+      }
+    }
+  }
+}

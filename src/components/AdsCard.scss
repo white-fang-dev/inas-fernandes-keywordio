@@ -1,0 +1,59 @@
+@import "./../color/color.scss";
+
+.ads {
+  width: 16rem;
+  cursor: pointer;
+  background: $white-color;
+  border-radius: 8px;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12);
+  .adsCheckbox {
+    outline: 1px solid $border-color;
+    align-self: flex-start;
+    margin-bottom: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 1rem;
+  }
+  .adsMockUp {
+    align-self: center;
+    width: 10rem;
+  }
+  .typeDiv {
+    background-color: $background-color;
+    margin: 0 0.2rem 0.2rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    .typeHeader {
+      color: $border-color;
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+    .adsType {
+      color: $header-color;
+      line-height: 1;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .ads {
+    width: 8rem;
+    padding-top: 0.5rem;
+    .adsMockUp {
+      width: 5rem;
+    }
+    .typeDiv {
+      padding: 0.5rem;
+
+      .adsType {
+        font-size: 1rem;
+      }
+    }
+  }
+}

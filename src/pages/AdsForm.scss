@@ -1,0 +1,48 @@
+@import "./../color/color.scss";
+
+.mediaAds {
+  @include default-section-style;
+  .mediaInputSection {
+    @include default-sub-section-style;
+    .createAdsHeader {
+      @include header-style;
+    }
+    form {
+      .flex {
+        display: flex;
+        gap: 1.5rem;
+        div {
+          flex: 1 1 0;
+        }
+      }
+    }
+    .formBtnDiv {
+      display: flex;
+      position: absolute;
+      right: 1rem;
+      bottom: 0.8rem;
+      gap: 1.25rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .mediaAds {
+    height: auto;
+    .mediaInputSection {
+      padding-bottom: 4rem;
+
+      form {
+        .flex {
+          flex-direction: column;
+          gap: 0;
+        }
+      }
+      .formBtnDiv {
+        right: auto;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+}

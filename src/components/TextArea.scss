@@ -1,0 +1,13 @@
+@import "./../color/color.scss";
+
+.textarea {
+  @include input-field-div-style;
+  .labelText {
+    @include label-text;
+  }
+  .textareaStyle {
+    @include input-field-style;
+    font-family: "Poppins", sans-serif;
+    flex: 3;
+  }
+}

@@ -1,0 +1,10 @@
+@import "./../color/color.scss";
+.input {
+  @include input-field-div-style;
+  .labelText {
+    @include label-text;
+  }
+  .inputStyle {
+    @include input-field-style;
+  }
+}

@@ -1,0 +1,58 @@
+$border-color: #e2e2e2;
+$header-color: #333d47;
+$text-color: #6c747b;
+$background-color: #fafafa;
+$white-color: #fff;
+$button-color: #0096ff;
+
+@mixin default-section-style {
+  height: 100dvh;
+  padding: 6rem 1.25rem 2rem 1.25rem;
+  background: $background-color;
+}
+
+@mixin default-sub-section-style {
+  background-color: $white-color;
+  border: 1px solid $border-color;
+  padding: 0.8rem 1rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+}
+
+@mixin header-style {
+  color: $header-color;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+@mixin input-field-div-style {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@mixin label-text {
+  font-weight: 600;
+  color: $header-color;
+  font-size: 0.875rem;
+}
+
+@mixin input-field-style {
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  padding: 0.6rem;
+  color: $text-color;
+  &::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.875rem;
+    color: $border-color;
+  }
+  &:focus {
+    outline: none;
+  }
+}

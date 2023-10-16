@@ -1,0 +1,20 @@
+@import "./../color/color.scss";
+
+.dashboard {
+  @include default-section-style;
+  .contentDiv {
+    height: 23.25rem;
+    display: flex;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .dashboard {
+    height: auto;
+    .contentDiv {
+      height: 100%;
+      flex-direction: column;
+    }
+  }
+}
